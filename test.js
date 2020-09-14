@@ -1,9 +1,11 @@
-/*
-//alert one
-alert("Hello, World!");
-*/
+var youLikeTrains = true;
 
-var myVariable = "hello world";
+if (youLikeTrains){
 
-//alert two
-alert(myVariable);
+    document.write("Here are your trains");
+
+} else {
+
+    document.write("Here are your boats");
+
+}
