@@ -1,23 +1,10 @@
-var myArray = [];
-myArray[0] = 25;
-myArray[1] = 35;
-myArray[2] = true;
-myArray[3] = "hello";
+var myString = new String();
+myString = "hello";
 
-console.log(myArray);
+console.log(myString.length);
+console.log(myString.toUpperCase());
 
-myArray[2] = false;
-myArray[4] = 6;
+var myString2 = "hi there";
 
-console.log(myArray);
-
-var myArray2 = [10,20,"hi",false];
-
-console.log(myArray2);
-
-var myArray3 = new Array();
-var myArray4 = new Array(5);
-
-console.log(myArray2.length);
-console.log(myArray2.sort());
-console.log(myArray2.reverse());
+console.log(myString2.length);
+console.log(myString2.toUpperCase());
