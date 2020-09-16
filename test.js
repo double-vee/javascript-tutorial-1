@@ -1,12 +1,23 @@
-var str = "hello, world";
-var str2 = str.slice(0,4);
-var str3 = str.slice(8,10);
+var myArray = [];
+myArray[0] = 25;
+myArray[1] = 35;
+myArray[2] = true;
+myArray[3] = "hello";
 
-console.log(str2);
-console.log(str3);
+console.log(myArray);
 
-var tags = "one, two, three, four, five, six";
+myArray[2] = false;
+myArray[4] = 6;
 
-var tagsArray = tags.split(",");
+console.log(myArray);
 
-console.log(tagsArray);
+var myArray2 = [10,20,"hi",false];
+
+console.log(myArray2);
+
+var myArray3 = new Array();
+var myArray4 = new Array(5);
+
+console.log(myArray2.length);
+console.log(myArray2.sort());
+console.log(myArray2.reverse());
