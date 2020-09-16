@@ -1,11 +1,12 @@
-var myString = "I am a \"fun ninja\" string";
+var str = "hello, world";
+var str2 = str.slice(0,4);
+var str3 = str.slice(8,10);
 
-if (myString.indexOf("ninja") === -1){
+console.log(str2);
+console.log(str3);
 
-  console.log("the word ninja is not in the string")
+var tags = "one, two, three, four, five, six";
 
-} else {
+var tagsArray = tags.split(",");
 
-  console.log("the word ninja starts at position " + myString.indexOf("ninja"));
-
-}
+console.log(tagsArray);
