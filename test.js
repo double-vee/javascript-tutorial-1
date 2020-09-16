@@ -1,10 +1,22 @@
-var myString = new String();
-myString = "hello";
+var myCar = new Object();
+myCar.maxSpeed = 50;
+myCar.driver = "Ron Swanson";
 
-console.log(myString.length);
-console.log(myString.toUpperCase());
+console.log(myCar.driver);
 
-var myString2 = "hi there";
+myCar.drive = function() {
+  console.log("now driving");
+};
 
-console.log(myString2.length);
-console.log(myString2.toUpperCase());
+myCar.drive();
+
+var myCar2 = {
+  maxSpeed: 80,
+  driver: "April Ludgate",
+  drive: function(speed, time){
+  console.log(speed * time);
+  }
+};
+
+console.log(myCar2.driver);
+myCar2.drive(80, 2);
