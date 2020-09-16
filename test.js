@@ -1,8 +1,11 @@
-var a = "apple";
-var b = 5;
+var myString = "I am a \"fun ninja\" string";
 
-if (isNaN(a)) {
-  console.log("this is not a number!");
+if (myString.indexOf("ninja") === -1){
+
+  console.log("the word ninja is not in the string")
+
 } else {
-  console.log("the result is " + (a * b));
+
+  console.log("the word ninja starts at position " + myString.indexOf("ninja"));
+
 }
