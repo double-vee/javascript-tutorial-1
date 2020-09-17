@@ -1,6 +1,8 @@
-var link = document.getElementById("test");
+var title = document.getElementById("test");
 
-link.setAttribute("class", "pie");
-link.setAttribute("alt", "hello");
+title.setAttribute("style", "position: relative; left: 10px; top: 15px;");
 
-link.className = "ninja";
+title.style.left = "20px";
+title.style.top = "20px";
+title.style.color = "black";
+title.style.backgroundColor = "yellow";
