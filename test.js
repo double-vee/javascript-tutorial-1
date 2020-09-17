@@ -1,7 +1,6 @@
-var myBody = document.getElementsByTagName("body");
+var link = document.getElementById("test");
 
-//myBody[0].innerHTML = "<p>Destroy all tags</p>";
+link.setAttribute("class", "pie");
+link.setAttribute("alt", "hello");
 
-var myTitle = document.getElementById("page-title");
-
-myTitle.textContent = "hello world";
+link.className = "ninja";
