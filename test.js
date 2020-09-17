@@ -1,9 +1,16 @@
-var title = document.getElementById("page-title");
+var content = document.getElementById("content");
+var button = document.getElementById("show-more");
 
-title.onclick = function(){
-  alert("you clicked me");
-};
+button.onclick = function(){
+  
+  if (content.className == "open"){
+    //shrink the box
+    content.className = "";
+    button.innerHTML = "show more";
+  } else{
+    //expand the box
+    content.className = "open";
+    button.innerHTML = "show less";
+  }
 
-title.onmouseover = function(){
-  alert("you hovered over me");
-};
+}
