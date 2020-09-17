@@ -1,8 +1,12 @@
-var title = document.getElementById("test");
+var newDiv = document.createElement("div");
 
-title.setAttribute("style", "position: relative; left: 10px; top: 15px;");
+var newA = document.createElement("a");
 
-title.style.left = "20px";
-title.style.top = "20px";
-title.style.color = "black";
-title.style.backgroundColor = "yellow";
+var links = document.getElementById("header");
+
+links.appendChild(newDiv);
+newDiv.appendChild(newA);
+
+newA.innerHTML = "blog";
+
+links.insertBefore(newDiv, links.getElementsByTagName("a")[0]);
