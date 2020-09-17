@@ -1,3 +1,7 @@
-var myContentDivs = document.getElementsByClassName("content");
-var myH2 = myContentDivs[0].getElementsByTagName("h2");
-myH2[0].innerHTML = "hello world";
+var myBody = document.getElementsByTagName("body");
+
+//myBody[0].innerHTML = "<p>Destroy all tags</p>";
+
+var myTitle = document.getElementById("page-title");
+
+myTitle.textContent = "hello world";
