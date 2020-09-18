@@ -3,56 +3,5 @@ body{
 }
 
 #message{
-    margin: 0 auto;
-    padding: 20px;
-    width: 400px;
-    background:  rgb(25, 25, 25);
-    color: #eee;
-    font-family: Arial, sans-serif;
-    font-size: 20px;
-    text-transform: uppercase;
-    text-align: center;
-    opacity: 0;
-
-    -webkit-transition: opacity 0.7s;
-    -moz-transition: opacity 0.7s;
-    transition: opacity 0.7s;
+    color: red;
 }
-
-#message.show{
-    opacity: 1;
-
-    -webkit-transition: opacity 0.7s;
-    -moz-transition: opacity 0.7s;
-    transition: opacity 0.7s;
-}
-
-#color-changer{
-    width: 200px;
-    height: 100px;
-    margin: 30px auto;
-    padding: 20px;
-    background: #fff;
-    color: black;
-    font-family: Arial, sans-serif;
-    font-size: 18px;
-    text-transform: uppercase;
-    text-align: center;
-
-    -webkit-transition: background 0.7s;
-    -moz-transition: background 0.7s;
-    transition: background 0.7s;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-

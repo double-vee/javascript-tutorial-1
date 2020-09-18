@@ -1,13 +1,14 @@
 var myForm = document.forms.myForm;
+var message = document.getElementById("message");
 
-myForm.name.onfocus = function(){
+myForm.onsubmit = function(){
 
-  myForm.name.style.border = "2px solid black";
-
-};
-
-myForm.name.onblur = function(){
-
-  myForm.name.style.border = "none";
+  if(myForm.name.value == ""){
+    message.innerHTML = "please enter a name";
+    return false;
+  } else{
+    message.innerHTML = "";
+    return true;
+  }
 
 };
