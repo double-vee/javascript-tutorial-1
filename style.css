@@ -2,47 +2,47 @@ body{
     background: #eee;
 }
 
-#content{
+#message{
     margin: 0 auto;
     padding: 20px;
-    padding-top: 0;
     width: 400px;
-    background: #fff;
-    color: #444;
-    font-family: Calibri, sans-serif;
-    font-size: 18px;
-
-    max-height: 270px;
-    overflow: hidden;
-
-    -webkit-transition: max-height 0.7s;
-    -moz-transition: max-height 0.7s;
-    transition: max-height 0.7s;
-}
-
-#content.open{
-    max-height: 1000px;
-
-    -webkit-transition: max-height 0.7s;
-    -moz-transition: max-height 0.7s;
-    transition: max-height 0.7s;
-}
-
-#show-more{
-    display: block;
-    margin: 20px auto;
-    padding: 10px;
-    width: 140px;
-    background: #1488e6;    
-	color: #fff;
-    text-decoration: none;
+    background:  rgb(25, 25, 25);
+    color: #eee;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
     text-transform: uppercase;
     text-align: center;
-    font-size: 24px;
-    font-family: Calibri, sans-serif;
-    cursor: pointer; 
+    opacity: 0;
+
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
 }
 
+#message.show{
+    opacity: 1;
+
+    -webkit-transition: opacity 0.7s;
+    -moz-transition: opacity 0.7s;
+    transition: opacity 0.7s;
+}
+
+#color-changer{
+    width: 200px;
+    height: 100px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #fff;
+    color: black;
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+
+    -webkit-transition: background 0.7s;
+    -moz-transition: background 0.7s;
+    transition: background 0.7s;
+}
 
 
 
