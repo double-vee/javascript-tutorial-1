@@ -8,12 +8,21 @@
   </head>
   <body>
 
-    <div id="message">
-      <p>this is a really important notification:</p>
-      <p>pie is nice</p>
-    </div>
-
-    <div id="color-changer"></div>
+    <form id="my-form" name="myForm" action="#">
+      <label for="name">Name:</label>
+      <input type="text" name="name"><br>
+      <label>Hobbies:</label><br>
+      <input type="checkbox" name="biking" value="biking">Biking<br>
+      <input type="checkbox" name="skiing" value="skiing">Skiing<br>
+      <input type="checkbox" name="diving" value="diving">Diving<br>
+      <label for="color">Fav color:</label>
+      <select name="color">
+        <option>Red</option>
+        <option>Blue</option>
+        <option>Green</option>
+      </select>
+      <input type="submit" name="submit" value="Submit">
+    </form>
       
     <script src="test.js"></script>
   </body>

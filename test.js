@@ -1,34 +1,13 @@
-var myMessage = document.getElementById("message");
+var myForm = document.forms.myForm;
 
-function showMessage(){
+myForm.name.onfocus = function(){
 
-  myMessage.className = "show";
+  myForm.name.style.border = "2px solid black";
 
-}
+};
 
-setTimeout(showMessage, 3000);
+myForm.name.onblur = function(){
 
-var colorChanger = document.getElementById("color-changer");
+  myForm.name.style.border = "none";
 
-var colors = ["cyan", "magenta", "yellow"];
-var counter = 0;
-
-function changeColor(){
-
-  if (counter >= colors.length){
-    counter = 0;
-  }
-
-  colorChanger.style.background = colors[counter];
-  counter++;
-
-}
-
-var myTimer = setInterval(changeColor, 3000);
-
-colorChanger.onclick = function(){
-
-  clearInterval(myTimer);
-  colorChanger.innerHTML = "Timer stopped";
-
-}
+};
