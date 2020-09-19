@@ -1,14 +1,6 @@
-var myForm = document.forms.myForm;
-var message = document.getElementById("message");
+var myPar2 = $("#content p:last-child");
 
-myForm.onsubmit = function(){
-
-  if(myForm.name.value == ""){
-    message.innerHTML = "please enter a name";
-    return false;
-  } else{
-    message.innerHTML = "";
-    return true;
-  }
-
-};
+myPar2.fadeOut();
+myPar2.fadeIn();
+myPar2.css({position: "relative", color: "red"});
+myPar2.animate({left: "50px"});
